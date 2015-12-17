@@ -1,0 +1,6 @@
+def toInt(in: String): Option[Int] =
+  try {
+    Some(Integer.parseInt(in.trim))
+  } catch {
+    case e: NumberFormatException => None
+  }
