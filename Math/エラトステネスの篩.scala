@@ -1,3 +1,4 @@
+// reference: http://bach.istc.kobe-u.ac.jp/lect/ProLang/org/scala-sieve.html
 // prime(n) : n以下の素数のリストを返す。
 object Sieve{
   def sieve(l: List[Int]): List[Int] =
