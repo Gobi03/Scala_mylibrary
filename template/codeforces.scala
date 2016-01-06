@@ -1,7 +1,7 @@
 import java.util.Scanner
 
 object Main{
-  // val n: Int = sc.nextInt()
+  // val n = sc.nextInt()
   // val s = sc.nextLine()
   // val str = sc.next()
 
