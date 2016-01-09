@@ -19,6 +19,7 @@ a.foreach(println)
 
 // 多次元配列
 val array = Array.ofDim[Int](2, 3)  // int[2][3]
+println(array(1)(2))
 println(array.deep)
 
 deep  // 配列の中身も見れる
