@@ -7,6 +7,7 @@ str(n)  //n文字目の文字を返す。
 
 val s = str.updated(n, c)  // str(n) = c
 
+s.toList   // s を char list に変換
 
 
 

@@ -1,3 +1,5 @@
+math.Pi
+
 Range(m, n) , (m until n)  // m以上n未満
 (m to n)  // m以上n以下
 (m to n by k)  // m以上n以下をmからk置きに
