@@ -5,8 +5,8 @@
 var imos = new Array[Int](n+2)
 
 for(i <- 0 to m-1){
-  imos(a(i)) += 1
-  imos(b(i)+1) -= 1
+  imos(l(i)) += 1
+  imos(r(i)+1) -= 1
 }
 
 for(i <- 0 to n-1){
