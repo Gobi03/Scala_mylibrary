@@ -1,13 +1,9 @@
 // 基本
 var ar = new Array[Int](n)   //n要素のarrayを生成
-ar(i)    //take an i-th element
-ar(i) = num   //numをar(i)に代入
 ar.sorted    // 昇順にsortしたarrayを返す
 
-// 要素を直接取り出すループ。
-for (e <- a) {
-  println(e)
-}
+val d = Array.fill(10)(0);
+// d: Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 a1.sameElements(a2)   //一次元配列でのみ使用可
 
