@@ -22,3 +22,6 @@ for (x <- list) yield x+1 :List[Int]  // mapと同様の処理
 for (i <- list; j <- list) yield 10*i+j
 for (i <- 1 to 3; j <- 1 to 3) yield 10*i+j
 for (i <- 1 to 3; j <- 1 to 3 if i != j) yield 10*i+j
+
+// input
+val a = List.fill(N)(sc.nextInt)

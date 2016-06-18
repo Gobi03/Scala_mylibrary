@@ -20,3 +20,5 @@ println(array.deep)
 
 deep  // 配列の中身も見れる
 
+// sort
+scala.util.Sorting.quickSort(ar)
