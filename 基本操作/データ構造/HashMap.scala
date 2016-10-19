@@ -1,17 +1,19 @@
-// ここでのmapはMapのインスタンスであることに注意
+/* mutable ver */
+import scala.collection.mutable.Map
 
-// 上下で同義
-scala> var map = Map("hamlet"->118, "ophelia"->31)
-res: Map[String,Int] = Map(hamlet -> 118, ophelia -> 31)
+// declaration
+val map = Map("hamlet"-> 118, "ophelia"->31)
+val map = Map(("hamlet", 118), ("ophelia", 31))
 
-scala> Map(("hamlet", 118), ("ophelia", 31))
-res: Map[String,Int] = Map(hamlet -> 118, ophelia -> 31)
-//
+// 要素の追加
++ , +=
+map += ("horatio"-> 48)
 
-+ , += // 要素の追加
-map = map + ("horatio"->48)
+// update
+map("hamlet") += 1
 
-map.contains("hamlet") :Boolean  // keyが含まれているかどうか
+// keyが含まれているかどうか
+map.contains("hamlet") :Boolean
 
 map("hamlet") :Int // 要素の取り出し
 map.apply("hamlet") :Int // 要素の取り出し
@@ -20,10 +22,10 @@ map.apply("hamlet") :Int // 要素の取り出し
 map.getOrElse("hamlet", 0) :Int  // 要素の取り出し(error時sndの値返す)
 
 // キーの集合を求める
-scala> map.keys
-res: Iterable[String] = Set(hamlet, ophelia, horatio)
+map.keys
+=> res: Iterable[String] = Set(hamlet, ophelia, horatio)
 
-map.size , map.kes.size  // keyの個数
+map.size, map.kes.size  // keyの個数
 
 
 // キーに対するフィルター(キー7文字以上のものだけを求めている例)

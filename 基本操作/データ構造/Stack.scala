@@ -9,3 +9,6 @@ stack.pop
 
 // observe
 stack.top
+
+
+stack.isEmpty

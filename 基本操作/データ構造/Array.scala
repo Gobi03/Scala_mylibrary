@@ -9,7 +9,6 @@ a1.sameElements(a2)   //一次元配列でのみ使用可
 
 var s: Array[String] = Array.fill(n)("")   //n-arrayを "" でinitialize
 
-a.foreach{ e => println(e) }
 a.foreach{ println(_) }
 a.foreach(println)
 

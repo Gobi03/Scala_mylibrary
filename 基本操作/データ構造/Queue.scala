@@ -10,3 +10,5 @@ q.dequeue
 
 // add List's elements
 q ++= List(1, 2, 3)
+
+q.isEmpty

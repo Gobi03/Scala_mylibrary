@@ -7,14 +7,10 @@ str(n)  //n文字目の文字を返す。
 
 val s = str.updated(n, c)  // str(n) = c
 
-s.toList   // s を char list に変換
+/* List[Char] <-> String */
+s.toList   // s を Char list に変換
+String.valueOf(cl)  // cl を String に変換
 
-
-
-
-
-
-
-
+"a"*3 => "aaa"
 
 

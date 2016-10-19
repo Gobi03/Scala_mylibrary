@@ -13,6 +13,7 @@ def binarySearch(min: Int, max: Int): Int = {
         case false => binarySearch(min, mid)
       }
   }
+}
 
 // 条件を満たす最小の値を返す
 def binarySearch(min: Int, max: Int): Int = {
@@ -29,3 +30,4 @@ def binarySearch(min: Int, max: Int): Int = {
         case false => binarySearch(mid, max)
       }
   }
+}
