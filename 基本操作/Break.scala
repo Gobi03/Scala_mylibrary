@@ -1,6 +1,6 @@
-val b = new scala.util.control.Breaks
-b.breakable {
+val break = new scala.util.control.Breaks
+break.breakable {
   while(true) {
-    b.break
+    break.break
   }
 }
