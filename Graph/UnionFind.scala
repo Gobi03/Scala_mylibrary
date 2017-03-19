@@ -30,7 +30,7 @@ def connect(a: Int, b: Int): Boolean = {
 
   // ra と rb を結合し、rb の親を ra とする
   uni(ra) += uni(rb)
-  uni(rb) += ra
+  uni(rb) = ra
   return true
 }
 
