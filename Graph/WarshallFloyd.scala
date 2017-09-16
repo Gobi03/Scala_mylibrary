@@ -1,5 +1,10 @@
 // O(V^3)
 // V は頂点数
+
+// 他ノードを経由しているかの確認
+// (i != x && i != y) && d(x)(y) == d(x)(i) + d(i)(y)
+
+
 val d = Array.ofDim[Int](v, v)  // d[a][b] は辺 e = (a, b) のコスト(存在しない場合はINF, ただし d[i][i] = 0 とする)
 val MAX = 1e9.toInt
 
