@@ -1,23 +1,21 @@
 import scala.collection.mutable.PriorityQueue
 
-
 /*  降順  */
-val q = new PriorityQueue[Int]
+val pq = new PriorityQueue[Int]
 
 // enqueue
-q += 21
-q.enqueue(13)
+pq += 21
+pq.enqueue(13)
 
 // reference the top element
-q.head
+pq.head
 
 // dequeue
-q.dequeue
+pq.dequeue
 
 // check empty
-q.isEmpty
-
+pq.isEmpty
 
 
 /*  昇順  */
-val q = new PriorityQueue[Int]()(Ordering.Int.reverse)
+val pq = new PriorityQueue[Int]()(Ordering.Int.reverse)
