@@ -1,6 +1,6 @@
 // 条件を満たす最大の値を返す
 def binarySearch(min: Int, max: Int): Int = {
-  val mid: Int = (max + min) / 2;
+  val mid: Int = (max + min) / 2
   (max - min) match{
     case 0 | 1 =>
       check(max) match{
@@ -17,7 +17,7 @@ def binarySearch(min: Int, max: Int): Int = {
 
 // 条件を満たす最小の値を返す
 def binarySearch(min: Int, max: Int): Int = {
-  val mid: Int = (max + min) / 2;
+  val mid: Int = (max + min) / 2
   (max - min) match{
     case 0 | 1 =>
       check(min) match{

@@ -1,8 +1,7 @@
-// 基本
-var ar = new Array[Int](n)   //n要素のarrayを生成
+var ar = new Array[Int](n)   // n要素の配列を生成
 ar.sorted    // 昇順にsortしたarrayを返す
 
-val d = Array.fill(10)(0);
+val d = Array.fill(10)(0)
 // d: Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 a1.sameElements(a2)   //一次元配列でのみ使用可
