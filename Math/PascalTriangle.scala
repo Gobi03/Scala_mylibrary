@@ -4,7 +4,7 @@
 //  n = 0 に対応していない
 
 object Pascal{
-  val MOD = 1000000007
+  val MOD = 1e9.toInt + 7
 
   def pascal(n: Int): List[Int] = {
     // 次の段を作る
