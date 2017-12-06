@@ -23,4 +23,4 @@ deep  // 配列の中身も見れる
 scala.util.Sorting.quickSort(ar)
 
 // subarray
-ar.slice(begin: Int, end: Int)  // begin until end
+ar.slice(begin: Int, end: Int)  // begin until end (end not included)
