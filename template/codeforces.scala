@@ -1,5 +1,6 @@
 import java.io._
 import java.util.StringTokenizer
+import scala.util.control.Breaks.{breakable,break}
 
 object Main {
   val in = new InputReader(System.in)

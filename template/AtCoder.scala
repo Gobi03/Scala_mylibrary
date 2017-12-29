@@ -1,9 +1,11 @@
 import java.io._
 import java.util.StringTokenizer
+import scala.util.control.Breaks.{breakable,break}
 
 object Main extends App {
   val in = new InputReader(System.in)
   val pw = new PrintWriter(System.out)
+
   // val n = in.next().toInt
   // val a, b = in.next().toInt
   // val s = in.next()
