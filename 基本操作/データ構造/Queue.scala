@@ -1,4 +1,6 @@
-val q = new scala.collection.mutable.Queue[Int]
+import scala.collection.mutable.Queue
+
+val q = new Queue[Int]
 
 // enqueue
 q.enqueue(1)
