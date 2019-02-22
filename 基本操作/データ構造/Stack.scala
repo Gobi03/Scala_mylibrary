@@ -5,7 +5,7 @@ stack.push(1)
 stack.push(2)
 
 // pop
-stack.pop
+stack.pop()
 
 // observe
 stack.top
