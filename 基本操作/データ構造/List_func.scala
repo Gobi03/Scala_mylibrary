@@ -5,6 +5,7 @@ list.updated(i, x)   // update i-th element to x
 forall(_ > 2) , exists(_ > 2)  // :Boolean
 list.indexWhere(f) :Int // f(_)が真になる最初の i
 sortWith(f)  // 比較関数fの元でソート
+list.zipWithIndex  // 値とindexの組のリストに変換
 
 
 list.reduceLeft((a,b) => a + b)  // sum
