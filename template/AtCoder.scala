@@ -1,10 +1,14 @@
 import java.io._
 import java.util.StringTokenizer
 import scala.util.control.Breaks.{breakable,break}
+import scala.collection.mutable.Map
+import scala.collection.mutable.Queue
 
 object Main extends App {
   val in = new InputReader(System.in)
   val pw = new PrintWriter(System.out)
+
+  // val a = new Array[Int](N)
 
   // val n = in.next().toInt
   // val a, b = in.next().toInt
@@ -24,4 +28,3 @@ class InputReader(stream: InputStream) {
     tokenizer.nextToken()
   }
 }
-
