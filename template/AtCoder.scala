@@ -1,8 +1,7 @@
 import java.io._
 import java.util.StringTokenizer
 import scala.util.control.Breaks.{breakable,break}
-import scala.collection.mutable.Map
-import scala.collection.mutable.Queue
+import scala.collection.mutable.{Map, Queue, PriorityQueue}
 
 object Main extends App {
   val in = new InputReader(System.in)
