@@ -1,9 +1,9 @@
-import java.io._
-import java.util.StringTokenizer
-import scala.util.control.Breaks.{breakable,break}
-import scala.collection.mutable.{Map, Stack, Queue, PriorityQueue}
-
 object Main {
+  import java.io._
+  import java.util.StringTokenizer
+  import scala.util.control.Breaks.{breakable,break}
+  import scala.collection.mutable.{Map, Stack, Queue, PriorityQueue}
+
   val in = new InputReader(System.in)
   val pw = new PrintWriter(System.out)
 
@@ -15,6 +15,9 @@ object Main {
 
   }
 }
+
+import java.io._
+import java.util.StringTokenizer
 
 class InputReader(stream: InputStream) {
   private val reader = new BufferedReader(new InputStreamReader(stream))
