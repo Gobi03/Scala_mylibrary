@@ -27,3 +27,9 @@ class InputReader(stream: InputStream) {
     tokenizer.nextToken()
   }
 }
+
+object Sub {
+  def print2DimArray[A](mat: Array[Array[A]]): Unit = {
+    mat.foreach(lin => println(lin.deep))
+  }
+}
