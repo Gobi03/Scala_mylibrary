@@ -7,19 +7,19 @@ object Main extends App {
   val in = new InputReader(System.in)
   val pw = new PrintWriter(System.out)
 
-  // val a = new Array[Int](N)
-
   // val n = in.next().toInt
   // val a, b = in.next().toInt
   // val s = in.next()
+
+  // val a = new Array[Int](N)
 
 
 }
 
 
 class InputReader(stream: InputStream) {
-  private val reader = new BufferedReader(new InputStreamReader(stream))
-  private var tokenizer: StringTokenizer = new StringTokenizer(reader.readLine())
+  private[this] val reader = new BufferedReader(new InputStreamReader(stream))
+  private[this] var tokenizer: StringTokenizer = new StringTokenizer(reader.readLine())
   def next(): String = {
     while (!tokenizer.hasMoreTokens()) {
       tokenizer = new StringTokenizer(reader.readLine())
