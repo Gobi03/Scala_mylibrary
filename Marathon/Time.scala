@@ -1,4 +1,4 @@
 import java.util.Date
 
-val date = new Date()
-date.getTime // to milli seconds
+val startTime = new Date().getTime // to milli seconds
+val nowTime = (new Date().getTime - startTime)
