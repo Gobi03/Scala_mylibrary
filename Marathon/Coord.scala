@@ -1,8 +1,15 @@
-case class Coord(x: Int, y: Int) {
+case class Coord(x: Int, y: Int) extends Ordered[Coord] {
 
   val H: Int = ???; val W: Int = ???
 
   def this(p: (Int, Int)) = this(p._1, p._2)
+
+  def compare(that: Coord): Int = {
+    if (this.x != that.x)
+      this.x.compare(that.x)
+    else
+      this.y.compare(that.y)
+  }
 
   def +(co: Coord): Coord = {
     Coord(this.x + co.x, this.y + co.y)
@@ -11,6 +18,8 @@ case class Coord(x: Int, y: Int) {
   def -(co: Coord): Coord = {
     Coord(this.x - co.x, this.y - co.y)
   }
+
+  def toPair: (Int, Int) = (x, y)
 
   def inField: Boolean = {
     0 <= x && x < W && y <= 0 && y < H
