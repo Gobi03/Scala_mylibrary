@@ -22,7 +22,7 @@ case class Coord(x: Int, y: Int) extends Ordered[Coord] {
   def toPair: (Int, Int) = (x, y)
 
   def inField: Boolean = {
-    0 <= x && x < W && y <= 0 && y < H
+    0 <= x && x < W && 0 <= y && y < H
   }
 
   def mk4dir: List[Coord] = {
