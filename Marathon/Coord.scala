@@ -49,8 +49,12 @@ case class Coord(x: Int, y: Int) extends Ordered[Coord] {
     (this.x - that.x).abs + (this.y - that.y).abs
   }
 
-  def get2dim[A](ar: Array[Array[A]]): A = {
-    ar(this.y)(this.x)
+  def getMat[A](mat: Array[Array[A]]): A = {
+    mat(this.y)(this.x)
+  }
+
+  def putMat[A](mat: Array[Array[A]], value: A): Unit = {
+    mat(this.y)(this.x) = value
   }
 
   // this から見て that がどの方向にあるか見る
