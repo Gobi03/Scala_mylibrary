@@ -8,11 +8,11 @@ import scala.collection.mutable.PriorityQueue
 val edge = new Array[List[(Int, Int)]](v)  // (node, cost)
 
 
-// fro から to への最短距離(v は頂点数)
+// from から to への最短距離(v は頂点数)
 def dijkstra(from: Int, to: Int, v: Int): Int = {
   val MAX = Int.MaxValue
 
-  val dist = Array.fill(v)(MAX)   // fro からの距離を格納する
+  val dist = Array.fill(v)(MAX)   // from からの距離を格納する
   val check = new Array[Boolean](v)  // すでにその頂点からを調べたかのフラグ
 
   dist(from) = 0

@@ -9,12 +9,10 @@
 val d = Array.ofDim[Long](v+1, v+1)
 
 // 初期化
-val MAX = Long.MaxValue
+val MAX = Int.MaxValue
 for(i <- 1 to v; j <- 1 to v){
-  if(i == j)
-    d(i)(j) = 0
-  else
-    d(i)(j) = MAX
+  if(i == j) d(i)(j) = 0
+  else d(i)(j) = MAX
 }
 
 // ここで d の入力行う
@@ -24,3 +22,5 @@ for(i <- 1 to v; j <- 1 to v){
 for(k <- 1 to v; i <- 1 to v; j <- 1 to v){
   d(i)(j) = Math.min(d(i)(j), d(i)(k) + d(k)(j))
 }
+
+// MAX 以上が INF
