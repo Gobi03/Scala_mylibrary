@@ -1,12 +1,17 @@
 class ModComb(maxNum: Int, mod: Long) {
 
   private def repeatSquares(x: Long, n: Long): Long = {
-    if(n == 0)
-      1
-    else if(n % 2 == 0)
-      repeatSquares(x*x % mod, n/2)
-    else
-      (x * repeatSquares(x*x % mod, n/2)) % mod
+    def func(x: Long, n: Int): Long = {
+      if(n == 0)
+        1
+      else if(n % 2 == 0)
+        func(x*x % p, n/2)
+      else
+        (x * func(x*x % p, n/2)) % p
+    }
+
+    if (x == 0 && n != 0) 0
+    else func(x, n)
   }
 
   private val fact = new Array[Long](maxNum + 1)
