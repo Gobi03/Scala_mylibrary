@@ -1,9 +1,10 @@
 // O(α(n)) << O(log(n))
 // v は頂点数
+// ノード番号は 1-origin
 
 class UnionFind(v: Int){
   // 根であれば *そのグループの要素数(負)* が、子であれば親の番号が入る。
-  val uni = Array.fill(v)(-1)
+  val uni = Array.fill(v+1)(-1)
 
   // 頂点 v の所属するグループを調べる
   def root(v: Int): Int =
